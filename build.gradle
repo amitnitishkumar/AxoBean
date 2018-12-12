@@ -1,0 +1,69 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+             compile group: 'org.springframework', name: 'spring-context', version: '3.0.2.RELEASE'
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-testng
+             compile group: 'info.cukes', name: 'cucumber-testng', version: '1.2.4'
+    //Selenium
+             compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.11.0'
+    //Log4j
+             compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    //TestNg
+             compile group: 'org.testng', name: 'testng', version: '6.10'
+    //Mail 
+             compile group: 'javax.mail', name: 'javax.mail-api', version: '1.5.6'
+             compile group: 'javax.mail', name: 'mail', version: '1.4.7'
+    // Common IO
+             compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    //Extent Report
+             compile group: 'com.aventstack', name: 'extentreports', version: '4.0.5'
+             
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-java
+             compile group: 'info.cukes', name: 'cucumber-java', version: '1.2.4'
+             
+
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+task mycustomTask{
+    group "Custom Taks"
+    description "This is my first custom task."
+    doLast{
+      println "This is my task1.."     
+      
+    }
+    doFirst{
+      println "This is my task2.."
+    }
+    
+}
+mycustomTask.onlyIf{
+  project.hasProperty('doOpeartion')
+}
+// end:complete-example[]
