@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("fist.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cucumber.feature");
 formatter.feature({
   "line": 2,
   "name": "First test using Cucumber",
@@ -29,7 +29,7 @@ formatter.match({
   "location": "TestMe.execute()"
 });
 formatter.result({
-  "duration": 101919978,
+  "duration": 3184865530,
   "status": "passed"
 });
 });

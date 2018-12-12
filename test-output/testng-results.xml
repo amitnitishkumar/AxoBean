@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="489" started-at="2018-12-12T03:08:26Z" finished-at="2018-12-12T03:08:26Z">
+  <suite name="Default suite" duration-ms="17880" started-at="2018-12-12T11:00:52Z" finished-at="2018-12-12T11:01:10Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.axon.laucher.CucumberRunner@6a4f787b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.infa.axon.launcher.CucumberRunner@5c30a9b0]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="489" started-at="2018-12-12T03:08:26Z" finished-at="2018-12-12T03:08:26Z">
-      <class name="com.axon.laucher.CucumberRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.axon.laucher.CucumberRunner@6a4f787b]" name="setUpClass" is-config="true" duration-ms="241" started-at="2018-12-12T08:38:26Z" finished-at="2018-12-12T08:38:26Z">
+    <test name="Default test" duration-ms="17880" started-at="2018-12-12T11:00:52Z" finished-at="2018-12-12T11:01:10Z">
+      <class name="com.infa.axon.launcher.CucumberRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.infa.axon.launcher.CucumberRunner@5c30a9b0]" name="setUpClass" is-config="true" duration-ms="291" started-at="2018-12-12T16:30:52Z" finished-at="2018-12-12T16:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="start()[pri:0, instance:com.axon.laucher.CucumberRunner@6a4f787b]" name="start" is-config="true" duration-ms="0" started-at="2018-12-12T08:38:26Z" finished-at="2018-12-12T08:38:26Z">
+        <test-method status="PASS" signature="setupPreConfig()[pri:0, instance:com.infa.axon.launcher.CucumberRunner@5c30a9b0]" name="setupPreConfig" is-config="true" duration-ms="14229" started-at="2018-12-12T16:30:52Z" finished-at="2018-12-12T16:31:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.axon.laucher.CucumberRunner@6a4f787b]" name="feature" duration-ms="128" started-at="2018-12-12T08:38:26Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-12T08:38:26Z">
+        </test-method> <!-- setupPreConfig -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.infa.axon.launcher.CucumberRunner@5c30a9b0]" name="feature" duration-ms="3214" started-at="2018-12-12T16:31:07Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-12T16:31:10Z">
           <params>
             <param index="0">
               <value>
@@ -29,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.axon.laucher.CucumberRunner@6a4f787b]" name="tearDownClass" is-config="true" duration-ms="31" started-at="2018-12-12T08:38:26Z" finished-at="2018-12-12T08:38:26Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.infa.axon.launcher.CucumberRunner@5c30a9b0]" name="tearDownClass" is-config="true" duration-ms="39" started-at="2018-12-12T16:31:10Z" finished-at="2018-12-12T16:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.axon.laucher.CucumberRunner -->
+      </class> <!-- com.infa.axon.launcher.CucumberRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

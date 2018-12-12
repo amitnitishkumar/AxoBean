@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.axon.laucher.CucumberRunner">
+      <class name="com.infa.axon.launcher.CucumberRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature"/>
-          <include name="tearDownClass"/>
-          <include name="start"/>
+          <include name="setupPreConfig"/>
+          <include name="feature" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.axon.laucher.CucumberRunner -->
+      </class> <!-- com.infa.axon.launcher.CucumberRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

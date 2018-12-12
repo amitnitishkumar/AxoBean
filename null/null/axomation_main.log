@@ -1,0 +1,2 @@
+INFO    2018-12-12 16:31:03,769 [main]  - Creating an instance of webDrive - Browser: chrome
+INFO    2018-12-12 16:31:03,772 [main]  - Executing on Windows 10. Fetching Win ChromeDriver
