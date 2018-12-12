@@ -3,6 +3,17 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">   
-    <bean id = "driverfactory" class = "com.infa.drivers.DriverFactory"/>     
+    <bean id = "driverfactory" class = "com.infa.axon.drivers.DriverFactory"/>   
+    <bean id = "elements" class = "com.infa.axon.objectrepo.Elements">
+        <constructor-arg name="driverFactory" ref="driverfactory"/>
+     </bean>
+    <bean id = "driverutil" class = "com.infa.axon.drivers.DriverUtil">
+        <constructor-arg name="driverFactory" ref="driverfactory"/>
+    </bean>
+    <bean id ="loginmodule" class = "com.infa.axon.modules.Login">
+        <constructor-arg name="browser" ref="driverfactory"/>
+        <constructor-arg name="element" ref="elements"/>
+        <constructor-arg name="wdUtil" ref="driverutil"/>
+    </bean> 
 
 </beans>

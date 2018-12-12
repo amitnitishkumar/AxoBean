@@ -1,4 +1,4 @@
-package com.infa.utility;
+package com.infa.axon.utility;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -13,7 +13,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 
-import com.infa.reporter.LogHandler;
+import com.infa.axon.reporter.LogHandler;
 
 public class FileHelper {
 

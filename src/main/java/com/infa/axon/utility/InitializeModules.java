@@ -1,4 +1,4 @@
-package com.infa.utility;
+package com.infa.axon.utility;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

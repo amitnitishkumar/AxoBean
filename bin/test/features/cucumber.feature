@@ -1,5 +1,6 @@
 @first
-Feature: First test using Cucumber
+Feature: First test of Axon
 
-  Scenario: Login test in mercury tours
-    Given User has opened Mercury Tours WebSite
+  Scenario: First scenario to execute
+    Given User has lauched Application
+    When User login to Axon

@@ -1,4 +1,4 @@
-package com.infa.reporter;
+package com.infa.axon.reporter;
 
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Level;
@@ -7,7 +7,7 @@ import org.apache.log4j.PatternLayout;
 import org.apache.log4j.RollingFileAppender;
 
 import com.aventstack.extentreports.markuputils.Markup;
-import com.infa.utility.FileHelper;
+import com.infa.axon.utility.FileHelper;
 
 public class LogHandler {
 	private static Logger logger;

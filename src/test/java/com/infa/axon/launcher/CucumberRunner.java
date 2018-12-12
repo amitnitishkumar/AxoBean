@@ -4,9 +4,10 @@ import java.net.MalformedURLException;
 
 import org.springframework.context.ApplicationContext;
 import org.testng.annotations.BeforeClass;
-import com.infa.drivers.DriverFactory;
-import com.infa.utility.InitializeModules;
-import com.infa.utility.PropertyReader;
+
+import com.infa.axon.drivers.DriverFactory;
+import com.infa.axon.utility.InitializeModules;
+import com.infa.axon.utility.PropertyReader;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -15,7 +16,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features = {"src/test/resources/features"},
 		plugin   = {"pretty","html:reports/html/chrome"},
 		tags     = {"@first"},		
-		glue     = {"com.axon.basic.test"}
+		glue     = {"com.axon.basic","com.infa.axon.testcases"}
 		
 		)
 public class CucumberRunner extends AbstractTestNGCucumberTests {

@@ -1,4 +1,4 @@
-package com.infa.drivers;
+package com.infa.axon.drivers;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -10,9 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.infa.reporter.LogHandler;
-import com.infa.utility.PropertyReader;
-import com.infa.utility.Utils;
+import com.infa.axon.objectrepo.ObjectRepository;
+import com.infa.axon.reporter.LogHandler;
+import com.infa.axon.utility.PropertyReader;
+import com.infa.axon.utility.Utils;
 
 public class DriverFactory {	
 	WebDriver		webDriver;	
@@ -54,7 +55,7 @@ public class DriverFactory {
 			prefs.put("download.prompt_for_download", false);
 			prefs.put("download.default_directory",  downloadPath);
 			options.setExperimentalOption("prefs", prefs);
-			webDriver = new ChromeDriver(options);			
+			webDriver = new ChromeDriver(options);				
 			break;		
 
 		default:
@@ -63,6 +64,7 @@ public class DriverFactory {
 			break;
 		}		
 		webDriver.manage().deleteAllCookies();		
+		ObjectRepository.loadAllObjects();
 	}
 
 	public WebDriver getWebDriver() {

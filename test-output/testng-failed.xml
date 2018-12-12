@@ -8,6 +8,7 @@
           <include name="setUpClass"/>
           <include name="setupPreConfig"/>
           <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.infa.axon.launcher.CucumberRunner -->
     </classes>

@@ -1,9 +1,9 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cucumber.feature");
 formatter.feature({
   "line": 2,
-  "name": "First test using Cucumber",
+  "name": "First test of Axon",
   "description": "",
-  "id": "first-test-using-cucumber",
+  "id": "first-test-of-axon",
   "keyword": "Feature",
   "tags": [
     {
@@ -14,22 +14,34 @@ formatter.feature({
 });
 formatter.scenario({
   "line": 4,
-  "name": "Login test in mercury tours",
+  "name": "First scenario to execute",
   "description": "",
-  "id": "first-test-using-cucumber;login-test-in-mercury-tours",
+  "id": "first-test-of-axon;first-scenario-to-execute",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "User has opened Mercury Tours WebSite",
+  "name": "User has lauched Application",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 6,
+  "name": "User login to Axon",
+  "keyword": "When "
+});
 formatter.match({
-  "location": "TestMe.execute()"
+  "location": "LoginTest.lauchApplication()"
 });
 formatter.result({
-  "duration": 3184865530,
+  "duration": 4654537945,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTest.loginToAxon()"
+});
+formatter.result({
+  "duration": 5377944128,
   "status": "passed"
 });
 });
